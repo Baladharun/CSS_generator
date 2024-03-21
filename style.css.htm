@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS generator</title>
+    <link rel="stylesheet" href="css_generator.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="input">
+            <label for="background_color" id="gapping">Select Box's Background colour <input type="color" class="pic_color"></label>
+            <br>
+            
+            <label for="box_radius" class="align">Enter Box radius <div id="ans">0px</div></label>
+            <input id="ranges" type="range" min="0px" max = 200px> 
+            <br>
+
+            <label for="box_shadow" class="align">Enter Box Shadow </label>
+            <div id="arange">
+                <div id="horizontal_ans">0px</div>
+                <div id="vertical_ans">0px</div>
+            </div>
+            
+            <div><input id="horizontal" type="range" min="-100" max = 100>
+                <input id="vertical" type="range" min="-100" max = 100>
+                <input type="color" id="shadow_col"> 
+            </div>
+            
+            <br>
+            <label for="border" class="align">Select borderdesign and color</label>
+            <div>
+                <select style="width:250px" class="design">
+                    <option value="solid" >1.Solid</option>
+                    <option value="dotted">2.Dotted</option>
+                    <option value="dashed">3.Dashed</option>
+                </select>
+                <input type="color" id="colour">
+            </div>
+        </div>
+        <div class="output">
+            <div class="pic">
+                
+            </div>
+        </div>
+    </div>
+    
+    <div id="display">
+    
+    </div>
+
+    <div id="btns">
+        <button class="generate">Generate code</button>
+        <br>
+        <button class="copy">Copy code</button>
+    </div>
+    <script src="css_generator.js"></script>
+</body>
+</html>
